@@ -10,7 +10,7 @@ from django.contrib import messages
 # Create your views here.
 class HomepageView(View):
     def get(self, request):
-        return render(request, 'blog/index.html')
+        return render(request, 'index.html')
 
 class PortfolioView(View):
     def get(self, request):
@@ -86,7 +86,7 @@ class MessageView(View):
 
     def get(self, request):
         """Handle GET requests if needed"""
-        return render(request, 'blog/index.html')
+        return render(request, 'index.html')
 
 
 
